@@ -1,0 +1,1 @@
+Phoca Documentation Section Module is Joomla! CMS extension. Module which displays sections of Phoca Doucmentation in module position.
