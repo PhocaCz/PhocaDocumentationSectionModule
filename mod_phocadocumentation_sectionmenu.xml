@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" group="" version="1.5.0">
+	<name>Phoca Documentation Section Menu Module</name>
+	<creationDate>18/07/2008</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail>info@phoca.cz</authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0 beta</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Phoca Documentation Section Menu Module - displays a menu of Phoca Documentation component's sections</description>
+
+	<!-- Main File Copy Section -->
+	<files>
+		<filename module="mod_phocadocumentation_sectionmenu">index.html</filename>
+		<filename module="mod_phocadocumentation_sectionmenu">mod_phocadocumentation_sectionmenu.php</filename>
+		<filename module="mod_phocadocumentation_sectionmenu">mod_phocadocumentation_sectionmenu.xml</filename>
+		<filename module="mod_phocadocumentation_sectionmenu">assets/index.html</filename>
+		<filename module="mod_phocadocumentation_sectionmenu">tmpl/default.php</filename>
+		<filename module="mod_phocadocumentation_sectionmenu">tmpl/index.html</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocadocumentation_sectionmenu.ini</language>
+	</languages>
+
+	<!-- Only Development - copy ./front, ./language, ./other to admin area -->
+	<files>
+		<filename>language/en-GB/en-GB.mod_phocadocumentation_sectionmenu.ini</filename>
+		<filename>other/install_xml.php</filename>
+	</files>
+	
+	<params>
+		
+		<param name="display_sections" default="" size="10" type="text" label="Display Sections" description="Display Sections DESC" />
+		
+		<param name="hide_sections" default="" size="10" type="text" label="Hide Sections" description="Hide Sections DESC" />
+	
+	</params>
+
+</install>
